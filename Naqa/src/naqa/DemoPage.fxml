@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="homePage_main" minWidth="-Infinity" prefHeight="576.0" prefWidth="872.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="naqa.DemoPageController">
+    <children>
+        <FontAwesomeIconView fill="#ffaa2c" glyphName="MINUS_CIRCLE" layoutX="822.7142858505249" layoutY="27.0" onMouseClicked="#min" size="16" AnchorPane.rightAnchor="35.571428298950195" AnchorPane.topAnchor="13.285714149475098">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></FontAwesomeIconView>
+        <FontAwesomeIconView fill="RED" glyphName="TIMES_CIRCLE" layoutX="846.0" layoutY="27.714285850524902" onMouseClicked="#close" size="16" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="14.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></FontAwesomeIconView>
+        <BorderPane id="homePage_sub" prefHeight="533.0" prefWidth="872.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="43.0">
+            <effect>
+                <DropShadow color="#00000056" />
+            </effect>
+            <center>
+                <AnchorPane prefHeight="384.0" prefWidth="633.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <AnchorPane prefHeight="533.0" prefWidth="872.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <children>
+                                <BorderPane fx:id="root_pane" prefHeight="533.0" prefWidth="822.0" style="-fx-background-radius: 28;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                    <center>
+                                        <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                                            <children>
+                                                <Label alignment="CENTER" layoutX="548.0" layoutY="38.0" prefHeight="44.0" prefWidth="241.0" text="طريقة استخدام التطبيق:" textFill="#5e5e5e">
+                                                    <font>
+                                                        <Font name="Sakkal Majalla Bold" size="24.0" />
+                                                    </font>
+                                                </Label>
+                                                <MediaView fx:id="mv" fitHeight="300.0" fitWidth="500.0" layoutX="216.0" layoutY="116.0" onKeyPressed="#stopVideo" />
+                                                <Button fx:id="play" layoutX="449.0" layoutY="449.0" mnemonicParsing="false" onAction="#btnplay" prefHeight="31.0" prefWidth="100.0" style="-fx-background-color: FB5968; -fx-background-radius: 20;" text="تشغيل" textFill="WHITE">
+                                                    <font>
+                                                        <Font name="Sakkal Majalla Bold" size="16.0" />
+                                                    </font>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                                </Button>
+                                                <Button fx:id="stop" layoutX="303.0" layoutY="449.0" mnemonicParsing="false" onAction="#btnstop" prefHeight="31.0" prefWidth="100.0" style="-fx-background-color: FB5968; -fx-background-radius: 20;" text="إيقاف" textFill="WHITE">
+                                                    <font>
+                                                        <Font name="Sakkal Majalla Bold" size="16.0" />
+                                                    </font>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                                </Button>
+                                            </children>
+                                        </AnchorPane>
+                                    </center>
+                                </BorderPane>
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane id="fadeBlack" fx:id="opacityPane" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                        <AnchorPane id="menu" prefHeight="533.0" prefWidth="50.0">
+                            <children>
+                                <VBox layoutY="153.0" prefHeight="200.0" prefWidth="50.0" spacing="90.0">
+                                    <children>
+                                        <VBox prefHeight="533.0" prefWidth="50.0" spacing="17.0">
+                                            <children>
+                                                <Button id="menuButton" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#switchToScene1" prefHeight="38.0" prefWidth="199.0" textAlignment="CENTER" textFill="WHITE">
+                                                    <font>
+                                                        <Font name="Arial Black" size="14.0" />
+                                                    </font>
+                                                    <graphic>
+                                                        <FontAwesomeIconView fill="WHITE" glyphName="HOME" size="22" textAlignment="CENTER" />
+                                                    </graphic>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                                </Button>
+                                                <Button id="menuButton" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#switchToScene2" prefHeight="38.0" prefWidth="199.0" textAlignment="CENTER" textFill="WHITE">
+                                                    <font>
+                                                        <Font name="Arial Black" size="14.0" />
+                                                    </font>
+                                                    <graphic>
+                                                        <FontAwesomeIconView fill="WHITE" glyphName="USER" size="22" textAlignment="CENTER" />
+                                                    </graphic>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                                </Button>
+                                                <Button id="menuButton" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#switchToScene3" prefHeight="38.0" prefWidth="199.0" textAlignment="CENTER" textFill="WHITE">
+                                                    <font>
+                                                        <Font name="Arial Black" size="14.0" />
+                                                    </font>
+                                                    <graphic>
+                                                        <FontAwesomeIconView fill="WHITE" glyphName="MEDKIT" size="22" textAlignment="CENTER" />
+                                                    </graphic>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                                </Button>
+                                                <Button contentDisplay="RIGHT" mnemonicParsing="false" onAction="#switchToScene4" prefHeight="38.0" prefWidth="199.0" style="-fx-background-color: TRANSPARENT;" textAlignment="CENTER" textFill="WHITE">
+                                                    <font>
+                                                        <Font name="Arial Black" size="14.0" />
+                                                    </font>
+                                                    <graphic>
+                                                        <FontAwesomeIconView fill="WHITE" glyphName="INFO_CIRCLE" size="22" textAlignment="CENTER" />
+                                                    </graphic>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                                </Button>
+                                                <Button id="menuButton" contentDisplay="RIGHT" mnemonicParsing="false" prefHeight="38.0" prefWidth="199.0" textAlignment="CENTER" textFill="WHITE">
+                                                    <font>
+                                                        <Font name="Arial Black" size="14.0" />
+                                                    </font>
+                                                    <graphic>
+                                                        <FontAwesomeIconView disable="true" fill="WHITE" glyphName="PHONE" size="22" textAlignment="CENTER" />
+                                                    </graphic>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                                </Button>
+                                            </children>
+                                        </VBox>
+                                        <Button id="menuButton" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#switchToScene5" prefHeight="38.0" prefWidth="199.0" textAlignment="CENTER" textFill="WHITE">
+                                            <font>
+                                                <Font name="Arial Black" size="14.0" />
+                                            </font>
+                                            <graphic>
+                                                <FontAwesomeIconView fill="WHITE" glyphName="POWER_OFF" size="19" textAlignment="CENTER" />
+                                            </graphic>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                        </Button>
+                                    </children>
+                                </VBox>
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane id="pane2" fx:id="drawerPane" layoutX="48.0" prefHeight="533.0" prefWidth="148.0">
+                            <children>
+                                <VBox layoutX="5.0" layoutY="156.0" prefHeight="341.0" prefWidth="138.0" spacing="95.0">
+                                    <children>
+                                        <VBox prefHeight="200.0" prefWidth="100.0" spacing="20.0">
+                                            <children>
+                                                <Button id="menuButton" mnemonicParsing="false" onAction="#switchToScene1" text="الرئيسية" textFill="WHITE">
+                                                    <font>
+                                                        <Font size="13.0" />
+                                                    </font>
+                                                </Button>
+                                                <Button id="menuButton" mnemonicParsing="false" onAction="#switchToScene2" text="صفحتي" textFill="WHITE">
+                                                    <font>
+                                                        <Font size="13.0" />
+                                                    </font>
+                                                </Button>
+                                                <Button id="menuButton" mnemonicParsing="false" onAction="#switchToScene3" text="المستلزمات" textFill="WHITE">
+                                                    <font>
+                                                        <Font size="13.0" />
+                                                    </font>
+                                                </Button>
+                                                <Button id="menuButton" mnemonicParsing="false" onAction="#switchToScene4" text="عن البرنامج" textFill="WHITE">
+                                                    <font>
+                                                        <Font size="13.0" />
+                                                    </font>
+                                                </Button>
+                                                <Button id="menuButton" mnemonicParsing="false" text="رقم وزارة الصحة 937" textFill="WHITE">
+                                                    <font>
+                                                        <Font size="13.0" />
+                                                    </font>
+                                                </Button>
+                                            </children>
+                                        </VBox>
+                                        <Button id="menuButton" mnemonicParsing="false" onAction="#switchToScene5" text="تسجيل الخروج" textFill="WHITE">
+                                            <font>
+                                                <Font size="13.0" />
+                                            </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                        </Button>
+                                    </children>
+                                </VBox>
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane id="menu" layoutX="-2.0" prefHeight="533.0" prefWidth="50.0">
+                            <children>
+                                <VBox layoutY="153.0" prefHeight="200.0" prefWidth="50.0" spacing="90.0">
+                                    <children>
+                                        <VBox prefHeight="533.0" prefWidth="50.0" spacing="17.0">
+                                            <children>
+                                                <Button id="menuButton" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#switchToScene1" prefHeight="38.0" prefWidth="199.0" textAlignment="CENTER" textFill="WHITE">
+                                                    <font>
+                                                        <Font name="Arial Black" size="14.0" />
+                                                    </font>
+                                                    <graphic>
+                                                        <FontAwesomeIconView fill="WHITE" glyphName="HOME" size="22" textAlignment="CENTER" />
+                                                    </graphic>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                                </Button>
+                                                <Button id="menuButton" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#switchToScene2" prefHeight="38.0" prefWidth="199.0" textAlignment="CENTER" textFill="WHITE">
+                                                    <font>
+                                                        <Font name="Arial Black" size="14.0" />
+                                                    </font>
+                                                    <graphic>
+                                                        <FontAwesomeIconView fill="WHITE" glyphName="USER" size="22" textAlignment="CENTER" />
+                                                    </graphic>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                                </Button>
+                                                <Button id="menuButton" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#switchToScene3" prefHeight="38.0" prefWidth="199.0" textAlignment="CENTER" textFill="WHITE">
+                                                    <font>
+                                                        <Font name="Arial Black" size="14.0" />
+                                                    </font>
+                                                    <graphic>
+                                                        <FontAwesomeIconView fill="WHITE" glyphName="MEDKIT" size="22" textAlignment="CENTER" />
+                                                    </graphic>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                                </Button>
+                                                <Button id="menuButton" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#switchToScene4" prefHeight="38.0" prefWidth="199.0" textAlignment="CENTER" textFill="WHITE">
+                                                    <font>
+                                                        <Font name="Arial Black" size="14.0" />
+                                                    </font>
+                                                    <graphic>
+                                                        <FontAwesomeIconView fill="WHITE" glyphName="INFO_CIRCLE" size="22" textAlignment="CENTER" />
+                                                    </graphic>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                                </Button>
+                                                <Button id="menuButton" contentDisplay="RIGHT" mnemonicParsing="false" prefHeight="38.0" prefWidth="199.0" textAlignment="CENTER" textFill="WHITE">
+                                                    <font>
+                                                        <Font name="Arial Black" size="14.0" />
+                                                    </font>
+                                                    <graphic>
+                                                        <FontAwesomeIconView disable="true" fill="WHITE" glyphName="PHONE" size="22" textAlignment="CENTER" />
+                                                    </graphic>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                                </Button>
+                                            </children>
+                                        </VBox>
+                                        <Button id="menuButton" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#switchToScene5" prefHeight="38.0" prefWidth="199.0" textAlignment="CENTER" textFill="WHITE">
+                                            <font>
+                                                <Font name="Arial Black" size="14.0" />
+                                            </font>
+                                            <graphic>
+                                                <FontAwesomeIconView fill="WHITE" glyphName="POWER_OFF" size="19" textAlignment="CENTER" />
+                                            </graphic>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                        </Button>
+                                    </children>
+                                </VBox>
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane layoutY="21.0" prefHeight="40.0" prefWidth="50.0">
+                            <children>
+                                <Button id="menuButton" fx:id="drawerImage" contentDisplay="RIGHT" mnemonicParsing="false" prefHeight="38.0" prefWidth="50.0" textAlignment="CENTER" textFill="WHITE">
+                                    <font>
+                                        <Font name="Arial Black" size="14.0" />
+                                    </font>
+                                    <graphic>
+                                        <FontAwesomeIconView fill="WHITE" glyphName="NAVICON" size="22" textAlignment="CENTER" />
+                                    </graphic>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                                </Button>
+                            </children>
+                        </AnchorPane>
+                    </children>
+                </AnchorPane>
+            </center>
+        </BorderPane>
+    </children>
+</AnchorPane>

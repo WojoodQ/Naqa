@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="homePage_main" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="872.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="naqa.TimerController">
+   <children>
+      <AnchorPane id="homePage_sub" layoutY="30.0" minWidth="-Infinity" prefHeight="533.0" prefWidth="872.0" stylesheets="@style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <ImageView fitHeight="324.0" fitWidth="448.0" layoutX="212.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/1025332_cab80.gif" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutX="212.0" layoutY="266.0" prefHeight="200.0" prefWidth="448.0">
+               <children>
+                  <StackPane prefHeight="200.0" prefWidth="448.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <AnchorPane fx:id="timerPane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #F4F4F4;">
+                           <children>
+                              <GridPane layoutX="124.0" layoutY="55.0" prefHeight="200.0" prefWidth="448.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints maxHeight="164.0" minHeight="10.0" prefHeight="158.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="95.0" minHeight="10.0" prefHeight="42.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <GridPane>
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints maxHeight="74.0" minHeight="10.0" prefHeight="17.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="141.0" minHeight="10.0" prefHeight="141.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <Text fill="#2c3e50" strokeType="OUTSIDE" strokeWidth="0.0" text="ثواني" GridPane.halignment="CENTER">
+                                             <font>
+                                                <Font name="Times New Roman" size="18.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fill="#2c3e50" strokeType="OUTSIDE" strokeWidth="0.0" text="دقائق" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+                                             <font>
+                                                <Font name="Times New Roman" size="18.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fill="#2c3e50" strokeType="OUTSIDE" strokeWidth="0.0" text="ساعات" GridPane.columnIndex="2" GridPane.halignment="CENTER">
+                                             <font>
+                                                <Font name="Times New Roman" size="18.0" />
+                                             </font>
+                                          </Text>
+                                          <AnchorPane id="backTimer" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                             <GridPane.margin>
+                                                <Insets bottom="5.0" left="10.0" right="10.0" top="10.0" />
+                                             </GridPane.margin>
+                                             <children>
+                                                <Text fx:id="hourTimer" layoutX="15.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="00" wrappingWidth="103.5">
+                                                   <font>
+                                                      <Font size="96.0" />
+                                                   </font>
+                                                   <fill>
+                                                      <LinearGradient endX="1.0" endY="1.0">
+                                                         <stops>
+                                                            <Stop color="#2c3e50" />
+                                                            <Stop color="#4ca1af" offset="1.0" />
+                                                         </stops>
+                                                      </LinearGradient>
+                                                   </fill>
+                                                </Text>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane id="backTimer" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                             <GridPane.margin>
+                                                <Insets bottom="5.0" left="10.0" right="10.0" top="10.0" />
+                                             </GridPane.margin>
+                                             <children>
+                                                <Text fx:id="minTimer" layoutX="13.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="00" wrappingWidth="103.5">
+                                                   <font>
+                                                      <Font size="96.0" />
+                                                   </font>
+                                                   <fill>
+                                                      <LinearGradient endX="1.0" endY="1.0">
+                                                         <stops>
+                                                            <Stop color="#2c3e50" />
+                                                            <Stop color="#4ca1af" offset="1.0" />
+                                                         </stops>
+                                                      </LinearGradient>
+                                                   </fill>
+                                                </Text>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane id="backTimer" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+                                             <GridPane.margin>
+                                                <Insets bottom="5.0" left="10.0" right="10.0" top="10.0" />
+                                             </GridPane.margin>
+                                             <children>
+                                                <Text fx:id="secTimer" layoutX="13.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="00" wrappingWidth="103.5">
+                                                   <font>
+                                                      <Font size="96.0" />
+                                                   </font>
+                                                   <fill>
+                                                      <LinearGradient endX="1.0" endY="1.0">
+                                                         <stops>
+                                                            <Stop color="#2c3e50" />
+                                                            <Stop color="#4ca1af" offset="1.0" />
+                                                         </stops>
+                                                      </LinearGradient>
+                                                   </fill>
+                                                </Text>
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                    </GridPane>
+                                    <HBox nodeOrientation="RIGHT_TO_LEFT" prefHeight="42.0" prefWidth="268.0" spacing="15.0" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+                                       <children>
+                                          <JFXButton id="startTime" fx:id="stopButton" onAction="#stop" prefHeight="32.0" prefWidth="120.0" ripplerFill="WHITE" text="توقف" textFill="WHITE">
+                                             <font>
+                                                <Font name="Calibri" size="18.0" />
+                                             </font>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </JFXButton>
+                                          <JFXButton id="startSess" fx:id="stopButton1" onAction="#switchToScene1" prefHeight="32.0" prefWidth="120.0" ripplerFill="WHITE" text="أبدأ الجلسة" textFill="WHITE">
+                                             <font>
+                                                <Font name="Calibri" size="18.0" />
+                                             </font>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </JFXButton>
+                                       </children>
+                                       <GridPane.margin>
+                                          <Insets right="100.0" top="20.0" />
+                                       </GridPane.margin>
+                                    </HBox>
+                                 </children>
+                              </GridPane>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="menuPane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #F4F4F4;">
+                           <children>
+                              <GridPane prefHeight="200.0" prefWidth="448.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints maxHeight="163.0" minHeight="10.0" prefHeight="144.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="95.0" minHeight="10.0" prefHeight="56.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <GridPane>
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <Text fill="#2c3e50" strokeType="OUTSIDE" strokeWidth="0.0" text="ساعات" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+                                             <font>
+                                                <Font name="Sakkal Majalla" size="24.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fill="#2c3e50" strokeType="OUTSIDE" strokeWidth="0.0" text="دقائق" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                                             <font>
+                                                <Font name="Sakkal Majalla" size="24.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fill="#2c3e50" strokeType="OUTSIDE" strokeWidth="0.0" text="ثواني" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+                                             <font>
+                                                <Font name="Sakkal Majalla" size="24.0" />
+                                             </font>
+                                          </Text>
+                                          <JFXComboBox fx:id="hourInput" prefWidth="150.0" GridPane.halignment="CENTER">
+                                             <focusColor>
+                                                <LinearGradient endX="1.0" endY="1.0">
+                                                   <stops>
+                                                      <Stop color="#2c3e50" />
+                                                      <Stop color="#4ca1af" offset="1.0" />
+                                                   </stops>
+                                                </LinearGradient>
+                                             </focusColor>
+                                             <unFocusColor>
+                                                <LinearGradient endX="1.0" endY="1.0">
+                                                   <stops>
+                                                      <Stop color="#2c3e50" />
+                                                      <Stop color="#4ca1af" offset="1.0" />
+                                                   </stops>
+                                                </LinearGradient>
+                                             </unFocusColor>
+                                          </JFXComboBox>
+                                          <JFXComboBox fx:id="minInput" prefWidth="150.0" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                                             <focusColor>
+                                                <LinearGradient endX="1.0" endY="1.0">
+                                                   <stops>
+                                                      <Stop color="#2c3e50" />
+                                                      <Stop color="#4ca1af" offset="1.0" />
+                                                   </stops>
+                                                </LinearGradient>
+                                             </focusColor>
+                                             <unFocusColor>
+                                                <LinearGradient endX="1.0" endY="1.0">
+                                                   <stops>
+                                                      <Stop color="#2c3e50" />
+                                                      <Stop color="#4ca1af" offset="1.0" />
+                                                   </stops>
+                                                </LinearGradient>
+                                             </unFocusColor>
+                                          </JFXComboBox>
+                                          <JFXComboBox fx:id="secInput" prefWidth="150.0" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+                                             <focusColor>
+                                                <LinearGradient endX="1.0" endY="1.0">
+                                                   <stops>
+                                                      <Stop color="#2c3e50" />
+                                                      <Stop color="#4ca1af" offset="1.0" />
+                                                   </stops>
+                                                </LinearGradient>
+                                             </focusColor>
+                                             <unFocusColor>
+                                                <LinearGradient endX="1.0" endY="1.0">
+                                                   <stops>
+                                                      <Stop color="#2c3e50" />
+                                                      <Stop color="#4ca1af" offset="1.0" />
+                                                   </stops>
+                                                </LinearGradient>
+                                             </unFocusColor>
+                                          </JFXComboBox>
+                                       </children>
+                                    </GridPane>
+                                    <JFXButton id="startTime" fx:id="startButton" onAction="#start" prefHeight="32.0" prefWidth="120.0" ripplerFill="WHITE" text="أبدأ" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+                                       <font>
+                                          <Font name="Calibri" size="18.0" />
+                                       </font>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </JFXButton>
+                                 </children>
+                              </GridPane>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </StackPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <FontAwesomeIconView fill="#4d8c3b" glyphName="ARROW_CIRCLE_RIGHT" layoutX="827.0" layoutY="29.0" onMouseClicked="#close" size="16" AnchorPane.rightAnchor="31.285714149475098" AnchorPane.topAnchor="15.285714149475098">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></FontAwesomeIconView>
+      <FontAwesomeIconView fill="#ffaa2c" glyphName="MINUS_CIRCLE" layoutX="808.0" layoutY="29.0" onMouseClicked="#min" size="16">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></FontAwesomeIconView>
+   </children>
+</AnchorPane>

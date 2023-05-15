@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+
+<HBox prefHeight="466.0" prefWidth="872.0" style="-fx-background-radius: 50; -fx-background-color: #F4F4F4;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="naqa.MapRiyadhController">
+   <children>
+      <ScrollPane fx:id="map_scrollpane" prefHeight="533.0" prefWidth="803.0" style="-fx-background-radius: 2em; -fx-background-insets: 0;" stylesheets="@style.css">
+         <content>
+            <Pane fx:id="root_pane" styleClass="root_pane" stylesheets="@style.css">
+               <children>
+                  <ImageView fitHeight="700.0" fitWidth="1050.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/riyadh_map.png" />
+                     </image>
+                  </ImageView>
+                  <FontAwesomeIconView fx:id="map_pin" glyphName="MAP_MARKER" layoutX="311.0" layoutY="189.0" size="45">
+                     <fill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#171e39" />
+                              <Stop color="#4ca1af" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </fill>
+                  </FontAwesomeIconView>
+               </children>
+               <padding>
+                  <Insets top="-5.0" />
+               </padding>
+            </Pane>
+         </content>
+         <HBox.margin>
+            <Insets bottom="10.0" left="10.0" right="20.0" top="10.0" />
+         </HBox.margin>
+         <padding>
+            <Insets bottom="-5.0" left="-5.0" right="-5.0" top="-5.0" />
+         </padding>
+         <styleClass>
+            <String fx:value="root_pane" />
+            <String fx:value="decrement-arrow" />
+            <String fx:value="decrement-button" />
+            <String fx:value="increment-arrow" />
+            <String fx:value="thumb" />
+            <String fx:value="scroll-bar" />
+            <String fx:value="map_scrollpane" />
+         </styleClass>
+      </ScrollPane>
+      <ListView fx:id="map_listview" nodeOrientation="RIGHT_TO_LEFT" prefHeight="466.0" prefWidth="530.0" style="-fx-background-radius: 20;" stylesheets="@style.css">
+         <HBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </HBox.margin>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <styleClass>
+            <String fx:value="map_listview" />
+            <String fx:value="list-cell" />
+         </styleClass>
+      </ListView>
+   </children>
+   <padding>
+      <Insets bottom="15.0" left="10.0" right="10.0" top="5.0" />
+   </padding>
+</HBox>

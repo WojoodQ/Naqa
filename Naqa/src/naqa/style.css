@@ -1,0 +1,288 @@
+#menu{
+    -fx-background-color: linear-gradient(#2c3e50, #4ca1af);
+    -fx-background-radius: 28 0 0 0;
+}
+#startButton{
+    -fx-background-color: #e85655;
+    -fx-background-radius: 40;
+}
+FontAwesomeIconView:hover{
+    -fx-cursor: hand;
+}
+MaterialDesignIconView:hover{
+    -fx-cursor: hand;
+}
+#pane2{
+    -fx-background-color: linear-gradient(#2c3e50, #4ca1af);
+}
+#startTime{
+    -fx-background-color: linear-gradient(#2c3e50, #4ca1af);
+}
+#backTimer{
+    -fx-background-color: #d3d7da
+}
+#splashScreen{
+    -fx-background-color: #F4F4F4;
+    -fx-background-radius: 28;
+}
+#homePage_main{
+    -fx-background-radius: 28;
+    -fx-background-color: #FFFFFF;
+    -fx-border-radius: 28;
+    -fx-border-color: #FFFFFF;
+}
+#homePage_sub{
+    -fx-background-radius: 28 28 0 0;
+    -fx-background-color: #F4F4F4;
+
+}
+#fadeBlack{
+    -fx-background-radius: 28;
+    -fx-background-color: #000;
+}
+#menuButton{
+    -fx-background-color: TRANSPARENT;
+}
+#datePane{
+    -fx-background-radius: 8;
+    -fx-background-color: #ffffff;
+}
+#startSess{
+    -fx-background-color: #e85655
+}
+#redPane{
+    -fx-background-color:  linear-gradient(to right, #9e3f3f, #b04545, #c24a4a, #d55050, #e85655);
+    -fx-background-radius: 28;
+}
+#subRedPane{
+    -fx-background-color:#fff;
+    -fx-background-radius: 28;
+
+}
+parent{
+    -fx-background-color: transparent;
+}
+
+.pane{
+    -fx-background-color: #F4F4F4;
+    -fx-background-radius: 20px;
+}
+.bt_sign_up{
+    -fx-background-radius: 50px;
+    -fx-border-radius: 50px;
+    -fx-text-fill: #e8eef3;
+    -fx-background-color: linear-gradient(#2c3e50, #4ca1af);
+
+}
+
+.white-pane{
+    -fx-background-color: transparent;
+    -fx-border-radius: 50px; 
+    -fx-border-color: transparent;
+    -fx-background-radius:50px;
+}
+
+.pink-pane{
+    -fx-background-color: linear-gradient(#2c3e50, #4ca1af);
+    -fx-border-radius: 50px; 
+    -fx-border-color: transparent;
+    -fx-background-radius:50px;
+
+}
+.sign-pane{
+
+    -fx-background-color: transparent;
+}
+.back_but{
+    -fx-background-color:  linear-gradient(#2c3e50, #4ca1af);
+    -fx-border-color: linear-gradient(#2c3e50, #4ca1af);
+    -fx-border-width: 2px;
+    -fx-background-radius: 10px;
+    -fx-text-fill: white;
+    -fx-border-radius: 10px;
+}
+.Anchor-item{
+    -fx-background-color: transparent;
+}
+.item-but{
+    -fx-background-color: white;
+    -fx-border-color: linear-gradient(#2c3e50, #4ca1af);
+    -fx-border-width: 2px;
+    -fx-background-radius: 10px;
+    -fx-text-fill: black;
+    -fx-border-radius: 10px;
+}
+.tf-box{
+    -fx-background-color: transparent;
+    -fx-border-color: black;
+    -fx-border-width: 0px 0px 1px 0px;
+    -fx-text-fill: white;
+}
+
+.ft{
+    -fx-background-color: transparent
+}
+.pink-but{
+    -fx-background-color: transparent;
+    -fx-background-radius: 50px;
+    -fx-text-fill: #e8eef3;
+    -fx-border-color:#e85655;
+    -fx-border-radius: 50px;
+}
+.forget-but{
+    -fx-background-color: transparent;
+}
+.labelWel{
+    -fx-text-fill: linear-gradient(#2c3e50, #4ca1af);
+
+}
+.mainFxmlClass {
+    -fx-background-color: #f4f4f4;
+    -fx-background-radius: 28 28 0 0;
+}
+
+/*anchorPane and buttons*/
+.sPane{
+    -fx-background-color:white;
+    -fx-background-radius:28;
+}
+.btn{
+    -fx-background-color:white;
+}
+
+/*char*/
+.pieChart title{
+    -fx-font-family:"Sakkal Majalla";
+    -fx-font-size:16px;
+}
+
+/*Maps*/
+.root_pane{
+    -fx-border-width:20;
+    -fx-border-radius:50;
+}
+
+.list-view {
+    -fx-background-radius:0 50 50 0;
+    -fx-border-radius:50 0 0 50;
+    -fx-border-width:10;
+}
+
+.list-view .list-cell:hover {
+    -fx-background-color: #E85556;
+}
+
+
+.list-view .list-cell {
+    -fx-text-fill: black;
+    -fx-border-radius: 50;
+}
+.map_scrollpane .scroll-bar:vertical{
+    fx-focus-color: transparent;
+    -fx-background-insets: -1.4, 0, 1, 2;
+}
+.map_scrollpane .scroll-bar:horizontal{
+    fx-focus-color: transparent;
+    -fx-background-insets: -1.4, 0, 1, 2;
+}
+.map_scrollpane .scroll-bar:horizontal .decrement-button{
+    -fx-background-color:transparent;
+    -fx-background-radiues:0em;
+    -fx-padding:0 0 10 0;
+}
+.map_scrollpane .scroll-bar:vertical .decrement-button{
+    -fx-background-color:transparent;
+    -fx-background-radiues:0em;
+    -fx-padding:0 0 10 0;
+}
+.map_scrollpane .scroll-bar .increment-arrow,
+.map_scrollpane .scroll-bar .decrement-arrow
+{
+    -fx-padding:-2;
+}
+.map_scrollpane .scroll-bar:vertical .thumb{
+    -fx-background-color: derive(black,90%);
+    -fx-background-insets: 0,0,0;
+    -fx-background-radiues:2em;
+    -fx-pref-width: 2px;
+}
+.map_scrollpane .scroll-bar:horizontal .thumb{
+    -fx-background-color: derive(black,90%);
+    -fx-background-insets: 0,0,0;
+    -fx-background-radiues:2em;
+    -fx-pref-height:2px;
+}
+.img{
+    -fx-border-width:20;
+    -fx-border-color:#E85556;
+    -fx-border-radius:50;
+
+}
+.list-view .scroll-bar:vertical{
+    fx-focus-color: transparent;
+    -fx-background-insets: -1.4, 0, 1, 2;
+    -fx-padding:0 0 10 0;
+    height: 3px;
+}
+.list-view .scroll-bar:vertical .decrement-button{
+    -fx-background-color:transparent;
+    -fx-background-radiues:0em;
+    -fx-padding:0 0 10 0;
+
+}
+.list-view .scroll-bar .increment-arrow,
+.list-view .scroll-bar .decrement-arrow
+{
+    -fx-padding:-2;
+}
+.list-view .scroll-bar:vertical .thumb{
+    -fx-background-color: derive(black,90%);
+    -fx-background-insets: 0,0,0;
+    -fx-background-radiues:2em;
+}
+#comb {
+    -fx-background-color: #E85556;
+    -fx-background-radius: 50;
+    -fx-text-fill: white;    
+}
+#map_listview{
+    font-family:"Sakkal Majalla";
+    -fx-fill: blue; 
+}
+.tab{
+    -fx-pref-width : 180;
+    -fx-pref-height: 40;
+    -fx-background-color:#DDDDDD ;
+    -fx-border-color: transparent transparent linear-gradient(#2c3e50, #4ca1af) transparent; /*tabbed section*/
+    -fx-border-width: 2;
+    -fx-padding: 5 0 5 20;
+
+}
+.tab .tab-label { 
+    -fx-text-fill: linear-gradient(#2c3e50, #4ca1af);
+    -fx-font-size: 18px;
+    -fx-text-align: center;
+    -fx-padding: -4 0 0 0;
+    -fx-border-color:#DDDDDD ;
+}
+.tab-header-background{
+    -fx-border-color: transparent transparent linear-gradient(#2c3e50, #4ca1af) transparent; /*untabbed section*/
+    -fx-border-width: 2;
+}
+
+.tab:selected 
+{
+    -fx-background-color: #F4F4F4;
+    -fx-border-color:  linear-gradient(#2c3e50, #4ca1af)  linear-gradient(#2c3e50, #4ca1af) #F4F4F4  linear-gradient(#2c3e50, #4ca1af);/*selected tab*/
+    -fx-border-width: 2;
+    -fx-background-radius: 10 10 0 0;
+    -fx-border-radius: 10 10 0 0;
+}
+.tab:selected .tab-label{
+    -fx-text-fill:linear-gradient(#2c3e50, #4ca1af) ;
+    -fx-border-color: #F4F4F4;
+}
+
+.tab-pane:focused > .tab-header-area > .headers-region > .tab:selected .focus-indicator {
+    -fx-border-color: transparent;
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane id="AnchorPane" fx:id="sPane" minWidth="-Infinity" prefHeight="576.0" prefWidth="872.0" styleClass="sPane" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="naqa.MapController">
+   <children>
+       <BorderPane fx:id="root_pane" layoutY="43.0" prefHeight="533.0" prefWidth="872.0" stylesheets="@style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="43.0">
+         <top>
+            <ComboBox id="comb" fx:id="comb" nodeOrientation="RIGHT_TO_LEFT" onAction="#switch1" prefWidth="150.0" style="-fx-background-color: #E85556;" stylesheets="@style.css" BorderPane.alignment="CENTER_RIGHT">
+               <BorderPane.margin>
+                  <Insets bottom="10.0" right="20.0" top="30.0" />
+               </BorderPane.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ComboBox>
+         </top>
+         <styleClass>
+            <String fx:value="mainFxmlClass" />
+            <String fx:value="root_pane" />
+         </styleClass></BorderPane>
+      <FontAwesomeIconView fill="#4d8c3b" glyphName="ARROW_CIRCLE_RIGHT" layoutX="836.0" layoutY="28.0" onMouseClicked="#back" size="16">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></FontAwesomeIconView>
+   </children>
+</AnchorPane>

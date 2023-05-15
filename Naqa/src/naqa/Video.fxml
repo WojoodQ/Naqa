@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="872.0" style="-fx-background-radius: 0 0 28 28; -fx-background-color: linear-gradient(to right, #9e3f3f, #b04545, #c24a4a, #d55050, #e85655);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="naqa.VideoController">
+   <children>
+      <AnchorPane layoutX="313.0" layoutY="139.0" prefHeight="533.0" prefWidth="872.0" style="-fx-background-color: #fff; -fx-background-radius: 28 28 0 0;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <FontAwesomeIconView fill="WHITE" glyphName="ARROW_LEFT" layoutX="41.0" layoutY="496.0" size="14" />
+            <Label layoutX="65.0" layoutY="477.0" text="التالي" textFill="WHITE">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <MediaView fitHeight="200.0" fitWidth="200.0" layoutX="345.0" layoutY="88.0" />
+            <JFXButton fx:id="stop" layoutX="306.0" layoutY="411.0" onAction="#btnstop" prefHeight="40.0" prefWidth="114.0" ripplerFill="#33a2ae" style="-fx-background-color: linear-gradient(#2c3e50, #4ca1af); -fx-background-radius: 5;" text="ايقاف الفيديو" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></JFXButton>
+            <JFXButton fx:id="play" layoutX="453.0" layoutY="411.0" onAction="#btnplay" prefHeight="40.0" prefWidth="114.0" ripplerFill="#33a2ae" style="-fx-background-color: linear-gradient(#2c3e50, #4ca1af); -fx-background-radius: 5;" text="تشغيل الفيديو" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></JFXButton>
+            <MediaView fitHeight="200.0" fitWidth="200.0" layoutX="336.0" layoutY="142.0" />
+            <JFXButton buttonType="RAISED" layoutX="21.0" layoutY="472.0" onMouseClicked="#next" prefHeight="40.0" prefWidth="92.0" ripplerFill="#d94018" style="-fx-background-color: #e85655; -fx-background-radius: 5;" text="التالي " textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="ARROW_LEFT" size="14" text="" />
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <MediaView fx:id="mv" fitHeight="370.0" fitWidth="600.0" layoutX="136.0" layoutY="27.0" />
+         </children>
+      </AnchorPane>
+      <FontAwesomeIconView fill="WHITE" glyphName="ARROW_CIRCLE_RIGHT" layoutX="837.0" layoutY="28.0" onMouseClicked="#back" size="16">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></FontAwesomeIconView>
+   </children>
+</AnchorPane>

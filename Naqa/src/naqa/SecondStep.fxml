@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="redPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="872.0" style="-fx-background-radius: 0 0 28 28; -fx-background-color: linear-gradient(to right, #9e3f3f, #b04545, #c24a4a, #d55050, #e85655);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="naqa.SecondStepController">
+   <children>
+      <AnchorPane id="subRedPane" layoutX="313.0" layoutY="139.0" prefHeight="533.0" prefWidth="872.0" style="-fx-background-color: #fff; -fx-background-radius: 28 28 0 0;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Label layoutX="408.0" layoutY="85.0" prefHeight="66.0" prefWidth="353.0" text="لقد تم تحديد عدد الأكياس و الوانها ">
+               <font>
+                  <Font name="Calibri" size="28.0" />
+               </font>
+            </Label>
+            <Label layoutX="578.0" layoutY="138.0" prefHeight="25.0" prefWidth="167.0" text="احرص على اتباع الاتي :" textFill="#727272">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Pane layoutX="408.0" layoutY="267.0" prefHeight="133.0" prefWidth="110.0" style="-fx-background-color: #fff; -fx-background-radius: 5; -fx-border-color: FEDE2F; -fx-border-width: 5;">
+               <children>
+                  <ImageView fitHeight="87.0" fitWidth="75.0" layoutX="19.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/intravenous-saline-drip2.png" />
+                     </image>
+                     <effect>
+                        <DropShadow color="#adadad9b" />
+                     </effect>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="408.0" layoutY="242.0" prefHeight="25.0" prefWidth="62.0" style="-fx-background-color: FEDE2F; -fx-background-radius: 3;">
+               <children>
+                  <Label fx:id="yellow" layoutX="27.0" layoutY="2.0" textFill="WHITE" />
+               </children>
+            </Pane>
+            <Pane layoutX="547.0" layoutY="267.0" prefHeight="133.0" prefWidth="110.0" style="-fx-background-color: #fff; -fx-background-radius: 5; -fx-border-color: #8A5D9E; -fx-border-width: 5;">
+               <children>
+                  <ImageView fitHeight="87.0" fitWidth="85.0" layoutX="12.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/intravenous-saline-drip3.png" />
+                     </image>
+                     <effect>
+                        <DropShadow color="#adadad9b" />
+                     </effect>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="547.0" layoutY="242.0" prefHeight="25.0" prefWidth="62.0" style="-fx-background-color: #8A5D9E; -fx-background-radius: 3;">
+               <children>
+                  <Label layoutX="28.0" layoutY="4.0" text="1" textFill="WHITE" />
+               </children>
+            </Pane>
+            <Pane layoutX="682.0" layoutY="267.0" prefHeight="133.0" prefWidth="110.0" style="-fx-background-color: #fff; -fx-background-radius: 5; -fx-border-color: #89CF60; -fx-border-width: 5;">
+               <children>
+                  <ImageView fitHeight="120.0" fitWidth="101.0" layoutX="5.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/anything.png" />
+                     </image>
+                     <effect>
+                        <DropShadow color="#adadad9b" />
+                     </effect>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="682.0" layoutY="242.0" prefHeight="25.0" prefWidth="62.0" style="-fx-background-color: #89CF60; -fx-background-radius: 3;">
+               <children>
+                  <Label fx:id="green" layoutX="27.0" layoutY="2.0" textFill="WHITE" />
+               </children>
+            </Pane>
+            <ImageView fitHeight="433.0" fitWidth="219.0" layoutX="153.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/Picture39.png" />
+               </image>
+            </ImageView>
+            <JFXButton buttonType="RAISED" layoutX="21.0" layoutY="472.0" onMouseClicked="#next" prefHeight="40.0" prefWidth="92.0" ripplerFill="#d94018" style="-fx-background-color: #e85655; -fx-background-radius: 5;" text="التالي " textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="ARROW_LEFT" size="14" text="">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></FontAwesomeIconView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <FontAwesomeIconView fill="WHITE" glyphName="ARROW_CIRCLE_RIGHT" layoutX="837.0" layoutY="28.0" onMouseClicked="#back" size="16">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></FontAwesomeIconView>
+   </children>
+</AnchorPane>

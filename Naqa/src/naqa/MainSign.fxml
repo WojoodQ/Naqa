@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="sPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="872.0" style="-fx-background-color: transparent;" styleClass="parent" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="naqa.MainSignController">
+   <children>
+      <Pane prefHeight="558.0" prefWidth="872.0" styleClass="pane" stylesheets="@style.css">
+         <children>
+            <ImageView fitHeight="135.0" fitWidth="144.0" layoutX="166.0" layoutY="163.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/Butterfly%20.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="219.0" layoutY="260.0" prefHeight="17.0" prefWidth="38.0" text="نقاء " textFill="#c36666">
+               <font>
+                  <Font name="Calibri Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="RIGHT" layoutX="170.0" layoutY="275.0" prefHeight="41.0" prefWidth="134.0" text="ليس لديك حساب؟" textAlignment="CENTER" textFill="#3e5367">
+               <font>
+                  <Font name="Calibri Bold" size="18.0" />
+               </font>
+            </Label>
+            <Button alignment="CENTER" contentDisplay="CENTER" layoutX="170.0" layoutY="314.0" mnemonicParsing="false" onAction="#open_signup" prefHeight="26.0" prefWidth="134.0" styleClass="bt_sign_up" stylesheets="@style.css" text="إنشاء حساب">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="12.0" />
+               </font>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color blue="0.7568627595901489" green="0.7568627595901489" red="0.7803921699523926" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Button>
+            <ImageView fitHeight="135.0" fitWidth="144.0" layoutX="571.0" layoutY="166.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/Butterfly%20.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="623.0" layoutY="264.0" prefHeight="17.0" prefWidth="38.0" text="نقاء " textFill="#c36666">
+               <font>
+                  <Font name="Calibri Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="RIGHT" layoutX="579.0" layoutY="276.0" prefHeight="41.0" prefWidth="134.0" text=" لديك حساب؟" textAlignment="CENTER" textFill="#3e5367">
+               <font>
+                  <Font name="Calibri Bold" size="18.0" />
+               </font>
+            </Label>
+            <Button alignment="CENTER" contentDisplay="CENTER" layoutX="580.0" layoutY="314.0" mnemonicParsing="false" onAction="#open_signin" prefHeight="26.0" prefWidth="134.0" styleClass="bt_sign_up" stylesheets="@style.css" text="تسجيل الدخول">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="12.0" />
+               </font>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color blue="0.7568627595901489" green="0.7568627595901489" red="0.7803921699523926" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Button>
+            <VBox id="vbox" fx:id="vbox" layoutX="19.0" layoutY="46.0" prefHeight="480.0" prefWidth="400.0" style="-fx-background-radius: 28;" styleClass="white-pane" stylesheets="@style.css" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

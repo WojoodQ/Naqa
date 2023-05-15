@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="872.0" style="-fx-background-radius: 0 0 28 28; -fx-background-color: linear-gradient(to right, #9e3f3f, #b04545, #c24a4a, #d55050, #e85655);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="naqa.FinalStepController">
+   <children>
+      <AnchorPane layoutX="313.0" layoutY="139.0" prefHeight="533.0" prefWidth="872.0" style="-fx-background-color: #fff; -fx-background-radius: 28 28 0 0;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Label layoutX="499.0" layoutY="123.0" prefHeight="122.0" prefWidth="249.0" text="دُمت بنقاء">
+               <font>
+                  <Font name="Sakkal Majalla" size="80.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="#4ca1af" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <ImageView fitHeight="459.0" fitWidth="175.0" layoutX="160.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/Picture41.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="529.0" layoutY="234.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/Butterfly%20.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="523.0" fitWidth="419.0" layoutX="8.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/giphy.gif" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="523.0" fitWidth="419.0" layoutX="447.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/giphy.gif" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="35.0" layoutY="467.0" onMouseClicked="#next" prefHeight="39.0" prefWidth="118.0" ripplerFill="#c90808" style="-fx-background-color: #e85655; -fx-background-radius: 5;" text="انتهت الجلسة" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></JFXButton>
+         </children>
+      </AnchorPane>
+      <FontAwesomeIconView fill="WHITE" glyphName="ARROW_CIRCLE_RIGHT" layoutX="837.0" layoutY="28.0" onMouseClicked="#back" size="16">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></FontAwesomeIconView>
+   </children>
+</AnchorPane>

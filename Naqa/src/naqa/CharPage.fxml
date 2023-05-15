@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane id="AnchorPane" fx:id="sPane" minWidth="-Infinity" prefHeight="576.0" prefWidth="872.0" styleClass="sPane" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="naqa.CharPageController">
+   <children>
+       <BorderPane prefHeight="533.0" prefWidth="872.0" styleClass="mainFxmlClass" stylesheets="@style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="43.0">
+         <center>
+            <PieChart fx:id="pieChart" layoutX="14.0" layoutY="39.0" legendSide="LEFT" prefHeight="462.0" prefWidth="787.0" stylesheets="@style.css" title="الإستهلاك الشهري للمستلزمات الطبية">
+               <styleClass>
+                  <String fx:value="pieChart" />
+                  <String fx:value="pieChart-legend-item" />
+                  <String fx:value="pieChart-content" />
+               </styleClass>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <BorderPane.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </BorderPane.margin>
+            </PieChart>
+         </center>
+      </BorderPane>
+      <FontAwesomeIconView fill="#4d8c3b" glyphName="ARROW_CIRCLE_RIGHT" layoutX="837.0" layoutY="32.0" onMouseClicked="#close" size="16">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </FontAwesomeIconView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<VBox id="vbox" alignment="CENTER_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="400.0" styleClass="pink-pane" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="naqa.SignInController">
+   <children>
+      <Label alignment="TOP_CENTER" contentDisplay="CENTER" prefHeight="26.0" prefWidth="117.0" text="تسجيل الدخول" textFill="#fdfdfd">
+         <font>
+            <Font name="Calibri Bold" size="21.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <VBox.margin>
+            <Insets right="140.0" />
+         </VBox.margin>
+      </Label>
+      <HBox alignment="CENTER_RIGHT" prefHeight="40.0" prefWidth="379.0" stylesheets="@style.css">
+         <children>
+            <TextField fx:id="username" alignment="CENTER_RIGHT" prefHeight="27.0" prefWidth="317.0" promptText="اسم المستخدم" styleClass="tf-box" stylesheets="@style.css" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font name="Comic Sans MS" size="12.0" />
+               </font>
+            </TextField>
+            <MaterialDesignIconView fill="WHITE" glyphName="ACCOUNT" size="16" wrappingWidth="15.0" />
+         </children>
+         <VBox.margin>
+            <Insets left="15.0" right="15.0" top="15.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER_RIGHT" prefHeight="40.0" prefWidth="200.0" stylesheets="@style.css">
+         <VBox.margin>
+            <Insets left="15.0" right="15.0" top="20.0" />
+         </VBox.margin>
+         <children>
+            <PasswordField fx:id="password" alignment="CENTER_RIGHT" promptText="كلمة السر" styleClass="tf-box" stylesheets="@style.css" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font name="Comic Sans MS" size="12.0" />
+               </font>
+            </PasswordField>
+            <MaterialDesignIconView fill="WHITE" glyphName="LOCK" size="15" />
+         </children>
+      </HBox>
+      <Button fx:id="signin_but" mnemonicParsing="false" onAction="#signInBut" prefHeight="29.0" prefWidth="451.0" styleClass="pink-but" stylesheets="@style.css" text="تسجيل الدخول" textFill="WHITE" VBox.vgrow="ALWAYS">
+         <VBox.margin>
+            <Insets bottom="20.0" left="15.0" right="15.0" top="20.0" />
+         </VBox.margin>
+         <font>
+            <Font name="Calibri Bold" size="16.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color opacity="0.7507163286209106" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <Label fx:id="mess" alignment="CENTER" contentDisplay="CENTER" prefHeight="30.0" prefWidth="348.0" stylesheets="@style.css" textFill="#e91313">
+         <VBox.margin>
+            <Insets bottom="10.0" left="20.0" right="40.0" top="20.0" />
+         </VBox.margin>
+      </Label>
+   </children>
+</VBox>
